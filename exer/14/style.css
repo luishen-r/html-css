@@ -1,0 +1,26 @@
+@charset "UTF-8"
+
+;body{
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px
+}
+h1{
+  color: aqua;
+  font-size: 0.8em;
+}
+h2{
+    color: red;
+    font-size: 0.7em;
+}
+p{
+    color: green;
+    font-size: 0.5em;
+}
+.alinhar{
+    text-align: justify;
+    text-align: center;
+}
+a{
+    font-size: 0.5em;
+}

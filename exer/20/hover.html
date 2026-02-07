@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+</head>
+<style>
+    body{
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font-weight: lighter;
+    }
+    div:hover{
+        color: red;
+    }
+    div > p{
+        display: none;
+    }
+    div:hover > p{
+        display: block;
+        color: whitesmoke;
+        background-color: black; 
+        width: fit-content;   
+    }
+</style>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>passe o mouse sobre este parágrafo para ver o efeito</p>
+    <div>
+        passe o mouse aqui
+        <p>Texto escondido</p>
+    </div>
+    <p>Fim do Exemplo</p>
+</body>
+</html>

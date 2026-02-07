@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rebeccapurple;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        a:visited{
+            color: blue;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:active{
+            color: red;
+        }
+        a::after{
+            content: " (link externo)";
+            font-size: 0.7em;
+            color: gray;
+        }
+        a::before{
+            content: "🔗 ";
+        }
+        .especial::after{
+            content: " ←";
+        }
+        .especial::before{
+            content: "→";
+        }
+        .especial{
+            background-color: rgba(235, 41, 41, 0.712);
+            color: white;
+            margin: auto;
+            width: fit-content;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Links</h1>
+    <ul type="none">
+        <li><a href="https://github.com/luishen-r/testes-e-estudos" target="_blank" rel="Next">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/luis-henrique-oliveira-sampaio-3b9010394/" target="_blank" rel="Next">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/lh.smp/" target="_blank" rel="Next">Instagram</a></li>
+        <p class="especial">
+            EU AMO MINHA NAMORADA! ❤️
+        </p>
+</ul>
+</body>
+</html>
