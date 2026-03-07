@@ -23,7 +23,11 @@
             background-color: gray;
             color: white;
         }
-    
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+
+        }
     </style>
 </head>
 <body>
@@ -38,18 +42,13 @@
     -->
     <h1>Tabelas grandes</h1>
     <table>
+        <caption>População das unidades federativas</caption>
          <thead>
             <tr>
                 <th scope="col">Estado</th>
                 <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
-        <tfoot>
-            <tr>
-                <th scope="row">Total de Habitantes</th>
-                <td class="num"><strong>210.147.125</strong></td>
-            </tr>
-        </tfoot>
         <tbody>
             <tr>
                 <td>São Paulo</td>
@@ -159,7 +158,13 @@
                 <td>Roraima</td>
                 <td class="num">605.761</td>
             </tr>
-        </tbody>    
+        </tbody> 
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td scope="row">210.147.125</td>
+            </tr>
+        </tfoot>   
     </table>
 </body>
 </html>
