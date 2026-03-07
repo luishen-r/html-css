@@ -11,6 +11,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -23,6 +24,11 @@
             background-color: gray;
             color: white;
         }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
         caption{
             font-size: 1.3em;
             font-weight: bold;
@@ -33,6 +39,11 @@
         }
         tbody tr:nth-child(even){
             background-color: white;
+        }
+        caption{
+            border: 1px solid black;
+            height: 35px;
+            padding-top: 5px;
         }
     </style>
 </head>
