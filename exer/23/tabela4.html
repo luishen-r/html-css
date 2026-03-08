@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicío de tabelas</h1>
+    <table>
+        <caption>Filmes favoritos</caption>
+    <thead>
+        <tr>
+            <th scope="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Mulheres</th>
+            <td>Maria</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores 1</td>
+        </tr>
+        <tr>
+            <td>Leticia</td>
+            <td>Inception</td>
+            <td>2001</td>
+            <td>Fury</td>
+        </tr>
+        <tr>
+            <td>Larissa</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Batman begins</td>
+        </tr>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Homens</th>
+            <td>Leo</td>
+            <td>Filme 1</td>
+            <td>Filme 2</td>
+            <td>Filme 3</td>
+        </tr>
+        <tr>
+            <td>Luis</td>
+            <td>Filme 1</td>
+            <td>Filme 2</td>
+            <td>Filme 3</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>Filme 1</td>
+            <td>Filme 2</td>
+            <td>Filme 3</td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+</html>
